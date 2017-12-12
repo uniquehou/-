@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="header_left">
+			<input type="search" name="word" placeholder="Search">
+			<input type="submit" name="" value="Go">
+		</div>
+		<div class="header_right">
+			<a href="Login.html">Login</a>
+			<a href="regis.html">Register</a>
+			<a href="#">$1.23 <img src="images/cart.png" /> </a>
+		</div>
+	</header>
+
+	<nav>
+		<img src="images/logo.png" />
+		<div class="icon-3">
+			<h3> MENU </h3>
+			<div class="icon">
+				<span></span><span></span>
+			</div>
+		</div>
+		<ul>
+			<li>Home</li>
+			<li>Men</li>
+			<li>Women</li>
+			<li>blog</li>
+			<li>Conact</li>
+		</ul>
+	</nav>
+
+	<div class="main">
+
+	</div>
+
+	<footer>
+		<div class="footer_1">
+			<h3>MORE INFO</h3>
+			<p>How to order</p>
+			<p>FAQ</p>
+			<p>Location</p>
+			<p>Shipping</p>
+			<p>Membership</p>
+		</div>
+
+		<div class="footer_2">
+			<h3>CONTACT US</h3>
+			<p>Contrary to popuar belief</p>
+			<p>The standard chunk</p>
+			<p>office: +12 34 995 0792</p>
+			<img src="images/contact.png" />
+		</div>
+
+		<div class="footer_3">
+			<h3>NEWSLETTER</h3>
+			<p>Sign Up to get all news update and promo</p>
+			<div class="SignUp">
+				<input type="text">
+				<input type="submit" name="submit" value="Sign up">
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" href="js/base.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".icon-3").eq(0).click(function() {
+				$("nav>ul").slideToggle("slow");
+			});
+
+			$(window).resize(function() {
+				if ($(window).width() > 780) {
+					$("nav>ul").display = "flex";
+				}
+			})
+		})
+	</script>
+</body>
+</html>

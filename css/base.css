@@ -1,0 +1,192 @@
+body {
+	;
+}
+
+header {
+	background-color: #111;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 77px;
+}
+
+.header_left {
+	width: 35%;
+}
+
+.header_left input {
+	border: none;
+	color: #000;
+	height: 30px;
+	margin-right: 0px;
+}
+
+.header_left input:last-child {
+	margin-left: 0px;
+	background-color: #c7c7c7c; 
+}
+
+.header_right {
+	display: flex;
+	justify-content: space-between;
+	color: #fff;
+	width: 30%;
+}
+
+.header_right a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.1em;
+	line-height: 21px;
+}
+
+.header_right a:hover {
+	color: #EF5F21;
+}
+
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+	min-height: 78px;
+}
+
+.icon-3 {
+	display: none;
+	background-color: #EF5F21;
+	justify-content: space-between;
+	align-items: center;
+	width: 40%;
+	height: 40px;
+}
+.icon-3 h3 {
+	font-size: 15px;
+	color: #fff;
+	font-weight: bold;
+	margin-left: 20px;
+}
+.icon {
+	height: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-right: 10px;
+}
+.icon span {
+	width: 25px;
+	height: 5px;
+	background-color: #fff;
+	display: block;
+}
+
+nav img {
+	width: auto;
+	height: auto;
+}
+
+nav ul {
+	width: 40%;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li:first-child {
+	color: #EF5F21;
+}
+
+footer {
+	background-color: #111;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: #fff;
+	min-height: 300px;
+}
+
+
+footer>div {
+	min-height: 170px;
+	text-align: center;
+	min-width: 30%;
+}
+
+.SignUp input {
+	height: 34px;
+	border: 0px;
+}
+.SignUp input:first-child {
+	padding: 0px;
+}
+
+.SignUp input:last-child {
+	background-color: #EF5F21;
+	color: white;
+	padding: auto;
+}
+
+
+
+
+
+
+@media screen and (max-width: 780px) {
+	header {
+		justify-content: space-around;
+	}
+
+	
+	nav {
+		padding-top: 10px;
+	}
+	.icon-3 {
+		display: flex;
+	}
+	nav ul {
+		width: 100%;
+		border-top: 1px #ccc solid;
+		padding: 0px;
+	}
+	nav ul li {
+		display: block;
+		text-align: center;
+		font-size: 1.2em;
+		margin-top: 10px;
+		border-bottom: 1px #ccc solid;
+		width: 100%;
+	}
+	
+	nav ul {
+		display: none;
+	}
+
+
+	.header_right {
+		width: 60%;
+	}
+	footer {
+		flex-direction: column;
+	}
+}
+
+@media screen and (min-width: 780px) {
+	nav ul {
+		display: flex;
+	}
+}
+
+@media screen and (max-width: 530px) {
+	.header_left {
+		display: none;
+	}
+	.header_right {
+		width: 100%;
+		justify-content: space-around;
+	}
+}
